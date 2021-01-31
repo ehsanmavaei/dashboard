@@ -1,0 +1,85 @@
+/** flexbox**/
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+         align-items: center;
+    }
+    &-jc-sa{
+      justify-content: space-around;
+ }
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium){
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    @include breakpoint-up(large){
+      display: none;
+    }
+  }
+
+
+
+  //paddings
+
+  .container {
+    max-width: 59.375rem;
+    margin: 0 auto;
+  
+    &--pall {
+      padding-top: 4.375rem;
+      padding-right: 1.5rem;
+      padding-bottom: 4.375rem;
+      padding-left: 1.5rem;
+  
+      @include breakpoint-up(large){
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+    &--py {
+      padding-top: 4.375rem;
+      padding-bottom: 4.375rem;
+      
+      @include breakpoint-up(large){
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+    &--px {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    &--pt {
+      padding-top: 4.375rem;
+      
+      @include breakpoint-up(large){
+        padding-top: 6rem;
+      }
+    }
+    &--pr {
+      padding-right: 1.5rem;
+    }
+    &--pb {
+      padding-bottom: 4.375rem;
+      
+      @include breakpoint-up(large){
+        padding-bottom: 6rem;
+      }
+    }
+    &--pl {
+      padding-left: 1.5rem;
+    }
+  } 
