@@ -173,13 +173,35 @@ body {
 }
 
 .nav .search {
+  position: relative;
   -webkit-box-flex: 3;
-      -ms-flex: 3 1 300px;
-          flex: 3 1 300px;
+      -ms-flex: 3 1 200px;
+          flex: 3 1 200px;
 }
 
 .nav .search input {
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.3;
   width: 100%;
+  border: 0.1px solid #ebdfdf;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav .search::before {
+  content: '';
+  position: absolute;
+  background-image: url("/dist/img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  right: 0;
 }
 
 .nav .user img {
