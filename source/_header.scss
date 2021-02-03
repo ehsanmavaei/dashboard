@@ -10,6 +10,7 @@ position: relative;
     
 
 #burger{
+ 
    cursor: pointer;
   
     transition: all 0.4 ease;
@@ -17,6 +18,8 @@ position: relative;
     top:18px;
     left: 15px;
     .bar1,.bar2,.bar3{
+      
+
         width: 35px;
         height: 2px;
         background-color:black;
@@ -35,6 +38,7 @@ position: relative;
 
     }
     .bar3 {
+       
         width: 15px;
         margin: 0 auto;
 
@@ -45,9 +49,13 @@ position: relative;
   
 
     
-
+.content{
+    background-color: $header;
+}
 
 .nav{
+   
+    background-color: $header;
     margin-left: 50px;
     padding: 10px 10px;
    
@@ -100,4 +108,15 @@ position: relative;
    }
  
    
+}
+
+.burgerextend{
+    .bar1{
+        width: 35px !important;
+        margin: 0 auto;
+  
+    }
+    .bar3{
+        width: 35px !important;
+    }
 }
