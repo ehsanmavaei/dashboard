@@ -6,7 +6,7 @@
   <title>ModernLayout</title>
   <link rel="stylesheet" type="text/css" href="dist/css/style.css">
 </head>
-<body>
+<body onresize="size()">
   <div class="overlay">
 
     <div class="navigation">
@@ -18,7 +18,15 @@
       </ul>
     </div>
   </div>
- 
+  <div class="sidebar">
+    <ul>
+      <li> <a href="" class="flex"> <span><img src="dist/img/home.svg" alt=""></span> <p>home</p></a> </li>
+      <li> <a href="" class="flex"> <span><img src="dist/img/project.svg" alt=""></span>  <p>Projects</p></a> </li>
+      <li> <a href="" class="flex" > <span><img src="dist/img/pie.svg" alt=""></span>  <p>Plans</p></a> </li>
+      <li> <a href="" class="flex"> <span><img src="dist/img/setting.svg" alt=""></span>  <p>Setting</p></a> </li>
+   
+    </ul>
+  </div>
   <div  id="burger">
     <div class="bar1"></div>
     <div class="bar2"></div>
@@ -42,8 +50,7 @@
       
     </div>
     <div class="main">
-
-    </div>
+The main section    </div>
   </div>
   <script src="dist/js/script.js"></script>
 </body>
