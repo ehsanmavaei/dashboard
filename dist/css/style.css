@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap");
 /** flexbox**/
 .flex {
   display: -webkit-box;
@@ -127,6 +128,8 @@ a {
 
 body {
   position: relative;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #373741;
 }
 
 .sidebar {
@@ -319,12 +322,17 @@ body {
 }
 
 .main {
-  padding: 10px;
+  padding: 40px;
 }
 
 @media (min-width: 760px) {
   .main {
-    padding-left: 75px;
+    padding-left: 95px;
   }
+}
+
+.projects-status {
+  max-width: 400px;
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
