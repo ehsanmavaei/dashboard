@@ -1,0 +1,85 @@
+.projects-cards {
+  .cards {
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color:$orange;
+    border-radius: 30px;
+    border: none;
+    .cards-headder{
+        color:#4A4A4A;
+        font-size:20px;
+        span{
+            cursor: pointer;
+            display: inline-block;
+            
+            height: 6px;
+            
+            
+            font-weight: 700;
+            
+        }
+
+    }
+    .cards-title{
+      margin: 20px;
+      h3{
+          padding-bottom: 10px;
+      }
+    }
+    .cards-progress-bar {
+      .progress {
+        width: 100%;
+        height: 4px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        margin: 8px 0;
+      }
+
+      span {
+        width: 60%;
+        color: red;
+        height: 4px;
+        display: block;
+        background-color: darken($orange, 30%);
+      }
+      h4:last-of-type {
+        text-align: right;
+      }
+    }
+    .cards-footer{
+
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        img:last-of-type{
+            margin-left: -12px;
+        }
+        p{
+            background-color:#FFF;
+            border-radius: 20px;
+            padding: 7px 20px;
+            color: darken($orange, 40%);
+            font-weight: 700;
+        }
+        span{
+           margin-left: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+           font-weight: 700;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: #fff;
+            color: darken($orange, 30%);
+            font-size: 25px;
+            line-height: 0.4;
+        }
+    }
+  }
+
+}

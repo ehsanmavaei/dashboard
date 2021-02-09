@@ -12,6 +12,13 @@
           justify-content: space-between;
 }
 
+.flex-dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .flex-jc-c {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -334,5 +341,88 @@ body {
 .projects-status {
   max-width: 400px;
   padding-top: 30px;
+}
+
+.projects-cards .cards {
+  margin-top: 30px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: #fee4cb;
+  border-radius: 30px;
+  border: none;
+}
+
+.projects-cards .cards .cards-headder {
+  color: #4A4A4A;
+  font-size: 20px;
+}
+
+.projects-cards .cards .cards-headder span {
+  cursor: pointer;
+  display: inline-block;
+  height: 6px;
+  font-weight: 700;
+}
+
+.projects-cards .cards .cards-title {
+  margin: 20px;
+}
+
+.projects-cards .cards .cards-title h3 {
+  padding-bottom: 10px;
+}
+
+.projects-cards .cards .cards-progress-bar .progress {
+  width: 100%;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 8px 0;
+}
+
+.projects-cards .cards .cards-progress-bar span {
+  width: 60%;
+  color: red;
+  height: 4px;
+  display: block;
+  background-color: #fb9635;
+}
+
+.projects-cards .cards .cards-progress-bar h4:last-of-type {
+  text-align: right;
+}
+
+.projects-cards .cards .cards-footer img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.projects-cards .cards .cards-footer img:last-of-type {
+  margin-left: -12px;
+}
+
+.projects-cards .cards .cards-footer p {
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 7px 20px;
+  color: #f87c05;
+  font-weight: 700;
+}
+
+.projects-cards .cards .cards-footer span {
+  margin-left: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+  color: #fb9635;
+  font-size: 25px;
+  line-height: 0.4;
 }
 /*# sourceMappingURL=style.css.map */

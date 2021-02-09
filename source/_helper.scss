@@ -2,9 +2,12 @@
 
 .flex{
     display: flex;
-
+ 
     &-jc-sb{
         justify-content: space-between;
+    }
+    &-dir-col{
+       flex-direction: column;
     }
     &-jc-c{
         justify-content: center;
