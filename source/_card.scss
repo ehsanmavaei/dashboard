@@ -1,5 +1,20 @@
 .projects-cards {
+@include breakpoint-up(medium){
+  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+@include breakpoint-up(large){
+ 
+
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+
   .cards {
+    flex: 1 1 300px;
     margin-top: 30px;
     padding: 20px;
     box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px,
