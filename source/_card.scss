@@ -1,17 +1,14 @@
 .projects-cards {
-@include breakpoint-up(medium){
-  gap:20px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
-}
-@include breakpoint-up(large){
- 
-
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
-}
-
+  @include breakpoint-up(medium) {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
   .cards {
     flex: 1 1 300px;
@@ -19,28 +16,24 @@
     padding: 20px;
     box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    background-color:$orange;
-    border-radius: 30px;
+    border-radius: 20px;
     border: none;
-    .cards-headder{
-        color:#4A4A4A;
-        font-size:20px;
-        span{
-            cursor: pointer;
-            display: inline-block;
-            
-            height: 6px;
-            
-            
-            font-weight: 700;
-            
-        }
+    .cards-headder {
+      color: #4a4a4a;
+      font-size: 20px;
+      span {
+        cursor: pointer;
+        display: inline-block;
 
+        height: 6px;
+
+        font-weight: 700;
+      }
     }
-    .cards-title{
+    .cards-title {
       margin: 20px;
-      h3{
-          padding-bottom: 10px;
+      h3 {
+        padding-bottom: 10px;
       }
     }
     .cards-progress-bar {
@@ -54,47 +47,146 @@
       }
 
       span {
-        width: 60%;
-        color: red;
+      
         height: 4px;
         display: block;
-        background-color: darken($orange, 30%);
       }
       h4:last-of-type {
         text-align: right;
       }
     }
-    .cards-footer{
+    .cards-footer {
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+      }
+      img:last-of-type {
+        margin-left: -12px;
+      }
+      p {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 7px 20px;
 
-        img{
-            width: 20px;
-            height: 20px;
-            border-radius: 50px;
-        }
-        img:last-of-type{
-            margin-left: -12px;
-        }
-        p{
-            background-color:#FFF;
-            border-radius: 20px;
-            padding: 7px 20px;
-            color: darken($orange, 40%);
-            font-weight: 700;
-        }
-        span{
-           margin-left: 5px;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-           font-weight: 700;
-            border-radius: 50%;
-            padding: 5px;
-            background-color: #fff;
-            color: darken($orange, 30%);
-            font-size: 25px;
-            line-height: 0.4;
-        }
+        font-weight: 700;
+      }
+      span {
+        margin-left: 5px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        font-weight: 700;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #fff;
+
+        font-size: 25px;
+        line-height: 0.4;
+      }
     }
   }
+}
+.orange {
+  background-color: $orange;
 
+  .cards-progress-bar {
+    
+    span {
+      width: 60% !important;
+      color: red;
+      background-color: darken($orange, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($orange, 30%);
+    p {
+      color: darken($orange, 40%);
+    }
+  }
+}
+.blue {
+  background-color: $blue;
+
+  .cards-progress-bar {
+    span {
+      width: 50% ;
+      color: red;
+      background-color: darken($blue, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($blue, 30%);
+    p {
+      color: darken($blue, 40%);
+    }
+  }
+}
+.green {
+  background-color: $green;
+
+  .cards-progress-bar {
+    span {
+      width: 60% ;
+      color: red;
+      background-color: darken($green, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($green, 30%);
+    p {
+      color: darken($green, 40%);
+    }
+  }
+}
+.lightgreen {
+  background-color: $lightgreen;
+
+  .cards-progress-bar {
+    span {
+      width: 80% ;
+      color: red;
+      background-color: darken($lightgreen, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($lightgreen, 30%);
+    p {
+      color: darken($lightgreen, 40%);
+    }
+  }
+}
+.pink {
+  background-color: $pink;
+
+  .cards-progress-bar {
+    span {
+      width: 20% ;
+      color: red;
+      background-color: darken($pink, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($pink, 30%);
+    p {
+      color: darken($pink ,40%);
+    }
+  }
+}
+.darkblue {
+  background-color: $darkblue;
+
+  .cards-progress-bar {
+    span {
+      width: 40% ;
+      color: red;
+      background-color: darken($darkblue, 30%);
+    }
+  }
+  .cards-footer {
+    color: darken($darkblue, 30%);
+    p {
+      color: darken($darkblue ,40%);
+    }
+  }
 }

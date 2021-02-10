@@ -372,13 +372,12 @@ body {
   padding: 20px;
   -webkit-box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
           box-shadow: rgba(78, 71, 71, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  background-color: #fee4cb;
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
 }
 
 .projects-cards .cards .cards-headder {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 20px;
 }
 
@@ -407,11 +406,8 @@ body {
 }
 
 .projects-cards .cards .cards-progress-bar span {
-  width: 60%;
-  color: red;
   height: 4px;
   display: block;
-  background-color: #fb9635;
 }
 
 .projects-cards .cards .cards-progress-bar h4:last-of-type {
@@ -429,10 +425,9 @@ body {
 }
 
 .projects-cards .cards .cards-footer p {
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 20px;
   padding: 7px 20px;
-  color: #f87c05;
   font-weight: 700;
 }
 
@@ -445,8 +440,115 @@ body {
   border-radius: 50%;
   padding: 5px;
   background-color: #fff;
-  color: #fb9635;
   font-size: 25px;
   line-height: 0.4;
+}
+
+.orange {
+  background-color: #fee4cb;
+}
+
+.orange .cards-progress-bar span {
+  width: 60% !important;
+  color: red;
+  background-color: #fb9635;
+}
+
+.orange .cards-footer {
+  color: #fb9635;
+}
+
+.orange .cards-footer p {
+  color: #f87c05;
+}
+
+.blue {
+  background-color: #E9E7FD;
+}
+
+.blue .cards-progress-bar span {
+  width: 50%;
+  color: red;
+  background-color: #685af1;
+}
+
+.blue .cards-footer {
+  color: #685af1;
+}
+
+.blue .cards-footer p {
+  color: #3c2bed;
+}
+
+.green {
+  background-color: #C8F7DC;
+}
+
+.green .cards-progress-bar span {
+  width: 60%;
+  color: red;
+  background-color: #42e487;
+}
+
+.green .cards-footer {
+  color: #42e487;
+}
+
+.green .cards-footer p {
+  color: #1fd46c;
+}
+
+.lightgreen {
+  background-color: #DBF6FD;
+}
+
+.lightgreen .cards-progress-bar span {
+  width: 80%;
+  color: red;
+  background-color: #4ad2f5;
+}
+
+.lightgreen .cards-footer {
+  color: #4ad2f5;
+}
+
+.lightgreen .cards-footer p {
+  color: #1ac6f2;
+}
+
+.pink {
+  background-color: #FFD3E2;
+}
+
+.pink .cards-progress-bar span {
+  width: 20%;
+  color: red;
+  background-color: #ff3a7d;
+}
+
+.pink .cards-footer {
+  color: #ff3a7d;
+}
+
+.pink .cards-footer p {
+  color: #ff075c;
+}
+
+.darkblue {
+  background-color: #c1ccf7;
+}
+
+.darkblue .cards-progress-bar span {
+  width: 40%;
+  color: red;
+  background-color: #395de6;
+}
+
+.darkblue .cards-footer {
+  color: #395de6;
+}
+
+.darkblue .cards-footer p {
+  color: #1b40d1;
 }
 /*# sourceMappingURL=style.css.map */
